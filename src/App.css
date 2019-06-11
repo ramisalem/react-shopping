@@ -1,0 +1,521 @@
+/*start framwork*/
+body
+{
+    margin:0;
+    font-family:arial;
+   
+}
+.container
+{
+    width:1100px;
+    margin:auto;
+    
+}
+h1
+{
+    margin:0
+}
+* 
+{
+    box-sizing: border-box
+}
+/*end framwork*/
+
+
+
+
+
+/* start header*/
+
+header .nav
+{
+    background: #1A181B;
+   
+   
+   
+   
+   
+}
+header .container
+{
+    overflow: auto;
+    
+}
+
+header .container h2
+{
+    margin:0;
+    padding: 0;
+    text-transform:capitalize;
+    font-family: arial;
+    font-size: 26px;
+    color: #fff;
+    float:left;
+    line-height: 57px
+   
+       
+}
+
+header .container h2 span
+{
+    color:#75C400
+}
+
+header .container ul
+{
+    list-style: none;
+    overflow: auto;
+    padding-left: 0;
+    float: right
+    
+}
+header .container ul a
+{
+    color:#fff;
+    display: inline-block;
+    padding: 5px 13px;
+    font:bold 16px arial;
+    text-transform: capitalize
+}
+
+header .container ul a:first-child{color:#75C400;text-decoration: underline}
+
+header .container ul a:hover{
+    text-decoration: underline;
+    color:#75C400;
+    cursor:pointer   
+}
+
+header .container ul li.active{
+    text-decoration: underline;
+    color:#75C400;
+    cursor:pointer   
+}
+
+header .container ul  a:active{
+    text-decoration: underline;
+    color:#75C400;
+    cursor:pointer   
+}
+.active {
+	color:#75C400 !important;
+}
+
+
+
+
+
+.slider
+{
+background: url("./assets/images/fruits/1.jpg");
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    position: relative
+    
+
+
+}
+
+.slider .text
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+    
+}
+.slider h1
+{
+    color:#fff;
+    text-transform: capitalize;
+    border-bottom: 3px solid #fff;
+    border-top:3px solid #fff;
+    padding:7px
+}
+
+.slider button
+{
+    margin:20px;
+    background: none;
+    color:#fff;
+    padding:4px 25px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border:2px solid #fff
+}
+.slider button:hover{
+    cursor: pointer;
+    color:#75C400
+}
+
+
+
+/*start features*/
+
+.features
+{
+    padding: 100px 0 ;
+  
+    
+}
+
+.features .container
+{
+    overflow: auto;
+}
+
+.features .container h2
+{
+    text-transform: capitalize;
+    font-size:40px;
+    text-align: center;
+    text-shadow: 1px 1px 9px #b1b1b1;
+    color:#222;
+ 
+}
+
+.features .container .title::after
+{
+    content: "";
+    display: block;
+    background-color: #75C400;
+    height: 4px;
+    width: 10%;
+    margin:20px auto 0
+  
+}
+
+.features .container div
+{
+    float: left;
+    width:33.3%;
+    text-align: center
+}
+
+.features h3
+{
+    text-transform: capitalize;
+    text-shadow: 1px 1px 9px #b1b1b1;
+    text-align: center;
+    font-size: 30px;
+    color:#444
+}
+
+
+.features img
+{
+    width:200px;
+    height:200px;
+    border:1px solid #ccc;
+    border-radius:50%;
+}
+
+/*end features*/
+
+
+/* start farm*/
+.about_me
+{
+    background-color: #eee;
+    overflow: auto
+}
+.about_me .imag 
+{
+    
+    width:40%;
+    background: url(./assets//images/fruits/farm.jpg) ;
+    background-size: cover;
+    float: left;
+    height:400px
+   
+    
+ 
+}
+
+.about_me .data
+{
+    float: right;
+    width:60%;
+    padding:30px 180px 10px 30px
+}
+.data h1
+{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 1px 1px 9px #b1b1b1;
+    
+}
+ .data p
+{
+    line-height: 28px;
+    text-align: justify;
+    color:#555
+}
+  
+
+/*end farm*/
+
+
+/*start products*/
+.products
+{
+    padding:80px 0;
+    text-align: center;
+    
+}
+
+.products .container h1
+{
+    text-shadow: 1px 1px 9px #b1b1b1;
+    text-transform: capitalize;
+}
+
+
+ 
+.products .container .types
+{
+    overflow: auto;
+    text-align: center;
+    padding:20px 0
+}
+
+.products .types div
+{
+    display: inline-block;
+    width:20%;
+    border:2px solid #eee;
+    padding:10px ;
+    margin:10px
+  
+    
+}
+
+.products .types img
+{
+    width:150px;
+    height:150px
+}
+
+.products .types h5
+{
+    color:#75C400
+}
+
+.products .types select
+{
+     padding: 7.2px 5px;
+    margin-bottom: 10px
+}
+
+
+
+
+.products .container .clearfix
+{
+    clear: both
+}
+
+.products .container .types button
+{
+    border:1px solid #948B98;
+    text-transform: capitalize;
+    outline: none;
+    cursor: pointer;
+   background: none;
+    color: #1B191C;
+    padding: 7.2px 5px
+}
+.products .container .types button:hover
+{
+    color:#75C400;
+    border:1px solid #75C400
+}
+.products .container button i
+{
+    font-size: 16px
+}
+
+
+
+.products .more
+{
+    background:#75C400;
+    margin:30px;
+    padding:14px 36px;
+    border: 1px solid #75C400;
+    border-radius: 5px;
+    font: 18px arial;
+    color:#fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.products button:hover
+{
+    color:#75C400;
+    background:#fff;
+   
+}
+
+/*end products*/
+
+
+
+/*start contact*/
+
+.contact 
+{
+    background: #eee;
+    text-align: center;
+    padding:50px 0;
+    
+    
+}
+.contact .title::after 
+{
+    content: "";
+    display: block;
+    background-color: #75C400;
+    height: 4px;
+    width: 10%;
+    margin:20px auto 0
+}
+
+.contact .info
+{
+    display:inline-block;
+    width:33%;
+    padding:50px 40px 
+}
+
+.contact .info i
+{
+    font-size: 50px;
+    color:#75C400
+}
+
+.contact .info h5
+{
+    font-weight: normal
+}
+
+.contact .conform
+{
+   
+    width: 90%;
+    margin: 20px auto;}
+
+.contact form input:nth-child(1)
+{
+    width: 39%;
+    margin-right: 15px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.contact form input:nth-child(2)
+{
+     width: 39%;
+    border: none;
+padding: 10px;
+font-size:18px;}
+
+.contact form input:nth-child(3)
+{
+    width: 80%;
+  margin:15px auto;
+  border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact form textarea
+{
+    display: block;
+    width:80%;
+    margin: auto;
+    resize: vertical;
+    border: 0;
+    font-size:18px;
+    padding: 10px;
+    
+}
+
+.contact form input[type="submit"]
+
+{
+    background:#75C400;
+    margin:30px;
+    padding:14px 30px;
+   border:0;
+    border-radius: 5px;
+    font: 18px arial;
+    color:#fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.contact input[type="submit"]:hover{
+    background: #90ea0c;
+    border:0
+}
+    
+
+
+/*end contact*/
+
+
+
+/* start footer*/
+ .footer
+{
+    padding:100px 0 ;
+    text-align: center;
+    background: #1A181B
+}
+
+.footer h1
+{
+    text-transform: capitalize;
+    color:#fff;
+    
+}
+.footer h1 span
+{
+    color:#75C400
+}
+
+
+.footer i 
+{
+    font-size: 50px;
+    color:#eee;
+    padding:30px 5px
+}
+
+.footer i:hover
+{
+    cursor: pointer;
+    color:#75C400
+}
+
+
+.footer p
+{
+    color:#f0eeee
+}
+.footer p a
+{
+    text-decoration: none;
+    color:#75C400;
+    text-transform: capitalize;
+    
+}
+.footer p a:hover
+{
+    color:#eee
+}
+/* end footer*/
+
+
+
