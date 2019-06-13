@@ -41,11 +41,12 @@ export default class SignUp extends React.Component{
         })
         .then(res => {
             console.log(res.data);
-        })
-        .catch(function (response) {
-            //handle error
-            console.log(response);
         });
+        // .catch(function (response) {
+        //     //handle error
+        //     console.log(response);
+        //     alert(response.massage);
+        // });
 
     axios.post(  apiBaseUrl , {
         email:      this.state.email ,

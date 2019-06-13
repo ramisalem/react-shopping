@@ -46,6 +46,7 @@ app.use(allowCrossDomain);
 
 mongoose.connect('mongodb://localhost:27017/shop', { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
+mongoose.set('useCreateIndex', true);
 
 
 
@@ -211,6 +212,22 @@ app.get("/:productId", (req, res, next) => {
 });
 
 
+app.post('/api/products', (req, res) => {
+  let products = [], id = null;
+  let cart = JSON.parse(req.body.cart);
+  if (!cart) return res.json(products)
+  for (var i = 0; i < fruits.products.length; i++) {
+    id = fruits.products[i]._id.toString();
+    if (cart.hasOwnProperty(id)) {
+      fruits.products[i].qty = cart[id]
+      products.push(fruits.products[i]);
+    }
+  }
+  return res.json(products);
+});
+
+
+
 
 // app.post('/signin', (req,res) => {
 //   let user = data.users.filter((user) => {
@@ -350,7 +367,7 @@ app.delete("/:userId", (req, res, next) => {
 
 app.post("/signin", (req, res, next) => {
 
-  console.log(req.body);
+  //console.log(req.body);
   User.find({ email: req.body.email })
     .exec()
     .then(user => {
